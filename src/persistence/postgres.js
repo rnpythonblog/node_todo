@@ -18,7 +18,8 @@ let client;
 async function init() {
     const host = HOST_FILE ? fs.readFileSync(HOST_FILE) : HOST;
     const user = USER_FILE ? fs.readFileSync(USER_FILE) : USER;
-    const password = PASSWORD_FILE ? fs.readFileSync(PASSWORD_FILE, 'utf8') : PASSWORD;
+//    const password = PASSWORD_FILE ? fs.readFileSync(PASSWORD_FILE, 'utf8') : PASSWORD;
+    const password = "one"
     const database = DB_FILE ? fs.readFileSync(DB_FILE) : DB;
 
     await waitPort({ 
